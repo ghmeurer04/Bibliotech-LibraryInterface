@@ -45,7 +45,7 @@ function StudentAccess() {
             </> : 
             borrowTable ? 
             <><Header headerText="My Books" paragraphText="List of all books borrowed by you." />
-            <Table tableColumns={["Book Title", "Author", "Due Date"]} tableContent={[]} />
+            <Table tableContent={[]} />
             <Button text="Back" onClick={() => setBorrowTable(false)} /></>
             : <>
               <Header headerText="Student Access" paragraphText="Select the option you want to do." />

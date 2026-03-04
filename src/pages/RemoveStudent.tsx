@@ -6,29 +6,24 @@ interface Props{
     registerClick: () => void;
 }
 
-function RegisterStudent({ backClick, registerClick }: Props) {
+function RemoveStudent({ backClick, registerClick }: Props) {
     return (
         <>
             <h1 className="text-4xl font-semibold leading-tight text-white md:text-5xl flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              Register new Student
+              Remove Student
             </h1>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <InputField label="Student Name" placeholder="Enter student name" />
                 <InputField label="Student RA" placeholder="Enter student ID" />
             </div>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <InputField label="Student Email" placeholder="Enter student email" />
-                <InputField label="Student Course" placeholder="Enter student course" />
-            </div>
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <InputField label="Student Password" placeholder="Enter student password" />
+                <InputField label="Confirm Student RA" placeholder="Enter student ID" />
             </div>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button onClick={() => backClick()} text="Back" />
-              <Button onClick={() => registerClick()} text="Register" />
+              <Button onClick={() => registerClick()} text="Remove" />
             </div>
             </>
     )
 }
 
-export default RegisterStudent;
+export default RemoveStudent;

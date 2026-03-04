@@ -49,11 +49,3 @@ export function stopCamera() {
     stream.getTracks().forEach(track => track.stop());
     video.srcObject = null;
 }
-
-export function saveStudent() {
-    console.log("Saving student...");
-}
-
-export function saveBook() {
-    console.log("Saving book...");
-}
